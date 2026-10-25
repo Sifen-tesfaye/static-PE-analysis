@@ -1,4 +1,4 @@
-# Static PE Analysis and Educational Hashing Demonstration
+#  PE Analysis and Educational Hashing Demonstration
 
 ## Included work
 - PE inspection utility and import-analysis source code.
