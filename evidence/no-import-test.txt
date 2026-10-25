@@ -1,0 +1,4 @@
+PE format: PE32
+Import Directory RVA: 0x00000000
+Import Directory size: 0 bytes
+No import directory declared.

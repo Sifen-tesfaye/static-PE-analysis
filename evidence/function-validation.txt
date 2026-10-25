@@ -1,0 +1,20 @@
+PE Import Parser — Function-Level Validation
+Date: 2026-10-25
+Sample: /usr/share/dbd/binaries/dbd.exe
+Reference: objdump -p
+
+Import descriptor comparison:
+KERNEL32.dll: 29 functions — MATCH
+msvcrt.dll (first descriptor): 6 functions — MATCH
+msvcrt.dll (second descriptor): 31 functions — MATCH
+WSOCK32.DLL: 21 functions — MATCH
+
+Total expected function entries: 87
+Total parsed function entries: 87
+Result: All imported function names and ordering matched
+within the four import descriptors for this sample.
+
+Limitations:
+This is a targeted comparison against objdump, not exhaustive
+validation of all PE formats or malformed-file edge cases.
+The sample was analyzed statically and was not executed.

@@ -1,0 +1,5 @@
+No signature found
+Unable to extract existing signature
+PE checksum   : 00028966
+Failed
+Verification exit code: 1

@@ -1,0 +1,16 @@
+PE Import Parser — Verification Run
+Sun Oct 25 10:50:26 AM EDT 2026
+
+Test 1: Valid sample
+Exit status: 0
+
+Test 2: Invalid DOS header
+Invalid DOS header.
+Exit status: 1
+
+Test 3: Invalid section-boundary mapping
+Import directory RVA does not map to valid file data.
+PE format: PE32
+Import Directory RVA: 0x00001000
+Import Directory size: 20 bytes
+Exit status: 1

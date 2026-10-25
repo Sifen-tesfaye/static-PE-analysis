@@ -1,0 +1,23 @@
+Compile-Time Hashing Concept — Initial Validation
+Date: 2026-10-25
+
+Source:
+safe-demos/compile_time_hash_demo.c
+
+Build:
+gcc -std=c11 -Wall -Wextra -Wpedantic \
+  safe-demos/compile_time_hash_demo.c \
+  -o safe-demos/compile_time_hash_demo
+
+Test input: TEST
+Compile-time hash: 0xB2D739E5
+Runtime reference: 0xB2D739E5
+Comparison: PASS
+Program exit code: 0
+
+Scope and limitations:
+- This is a standalone educational demonstration.
+- The compile-time macro handles exactly four characters.
+- Only one input string was tested.
+- It does not resolve Windows APIs or hide the executable's imports.
+- It does not establish completion of the loader's API-hashing requirement.

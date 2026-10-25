@@ -1,0 +1,8 @@
+PE Import Parser — 19-Byte Import Directory Test
+Sun Oct 25 11:21:34 AM EDT 2026
+Test: import directory size is smaller than one 20-byte descriptor.
+Invalid import-directory size or range.
+PE format: PE32
+Import Directory RVA: 0x00001000
+Import Directory size: 19 bytes
+Exit status: 1

@@ -1,0 +1,3 @@
+Sample: /usr/share/dbd/binaries/dbd.exe
+Expected imported function entries: 87
+Observed imported function entries: 87

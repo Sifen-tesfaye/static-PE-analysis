@@ -1,0 +1,48 @@
+PE STATIC ANALYSIS PROJECT — STATUS REPORT
+Date: 2026-10-25
+
+1. IMPLEMENTATION
+- Python PE inspector source: pe_inspector.py
+- C PE inspector source: pe_inspector.c
+- C PE import parser source: pe_import_report.c
+- Compiled import parser: pe_import_report
+
+2. FUNCTION-LEVEL CROSS-VALIDATION
+Sample: /usr/share/dbd/binaries/dbd.exe
+Reference: GNU objdump -p
+
+KERNEL32.dll: 29 function entries matched
+msvcrt.dll, first descriptor: 6 function entries matched
+msvcrt.dll, second descriptor: 31 function entries matched
+WSOCK32.DLL: 21 function entries matched
+
+Total expected entries: 87
+Total parsed entries: 87
+Result: Function names and ordering matched for the tested sample.
+
+3. NEGATIVE TESTS AND REGRESSION
+- Invalid DOS header: rejected
+- Invalid PE signature: rejected
+- Truncated PE: rejected
+- Valid no-import fixture: accepted
+- Section-boundary fixture: rejected
+- Import directory size 19: rejected
+- Inconsistent import fixture: rejected
+- PE32+ oversized import-name RVA: rejected at intended validation
+
+4. LIMITATIONS
+- Testing is targeted, not exhaustive.
+- The original bounds fixture was rejected before reaching its
+  intended section-boundary validation.
+- Matching one sample against objdump does not prove correctness
+  for all PE files.
+- The sample was analyzed statically and was not executed.
+- This work documents static parsing and validation; it does not
+  establish completion of a stealth loader or remote-process
+  injection implementation.
+
+5. OVERALL STATUS
+The static PE-analysis and import-parser validation milestone
+is complete for the documented test cases. Broader parser testing,
+documentation review, and any remaining assignment requirements
+must be assessed separately.

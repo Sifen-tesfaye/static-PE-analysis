@@ -1,0 +1,14 @@
+Test: PE32+ oversized import-name RVA
+Purpose: Verify rejection instead of 32-bit truncation
+Expected: Import-name RVA exceeds 32-bit range.
+
+Import-name RVA exceeds 32-bit range.
+PE format: PE32+
+Import Directory RVA: 0x00001000
+Import Directory size: 40 bytes
+
+Imported DLLs and functions:
+
+DLL: testdll.dll
+
+Result: PASS — malformed fixture rejected at intended validation.

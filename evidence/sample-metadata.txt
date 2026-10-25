@@ -1,0 +1,2 @@
+File size: 64512 bytes
+File name: /usr/share/dbd/binaries/dbd.exe

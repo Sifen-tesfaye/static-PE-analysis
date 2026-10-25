@@ -1,0 +1,15 @@
+PE Import Parser — Regression Testing After RVA Validation Fix
+Compiler: gcc -std=c11 -Wall -Wextra -Wpedantic
+Build: successful; no compiler warnings reported
+
+Valid sample: dbd.exe — exit 0
+Malformed DOS header — exit 1
+Malformed PE signature — exit 1
+Truncated PE — exit 1
+Valid no-import fixture — exit 0
+Section-boundary fixture — exit 1
+Import directory size 19 — exit 1
+Inconsistent import fixture — exit 1
+PE32+ oversized thunk — rejected at intended validation
+
+Overall: PASS for the tested cases.

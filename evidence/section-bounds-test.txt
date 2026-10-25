@@ -1,0 +1,17 @@
+File size: 512 bytes
+DOS signature: MZ
+PE header offset: 0x80
+COFF timestamp field: 0
+PE format: PE32
+Machine: 0x014C
+Number of sections: 1
+Optional-header size: 96
+Characteristics: 0x0002
+Entry point RVA: 0x1000
+Image base: 0x400000
+Preferred entry point VA: 0x401000
+
+Sections:
+Name        VirtualSize   VirtualAddress      RawSize    RawOffset  Characteristics
+.test               256 0x00001000          256 0x00001000 0x00000000
+  WARNING: .test raw data extends beyond the file.

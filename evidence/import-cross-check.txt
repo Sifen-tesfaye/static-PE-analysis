@@ -1,0 +1,20 @@
+PE Import Parser — Independent Cross-Check
+Date: 2026-10-25
+Sample: /usr/share/dbd/binaries/dbd.exe
+
+Reference tool: objdump -p
+Reference report: objdump-reference.txt
+
+DLL names reported by objdump:
+	DLL Name: KERNEL32.dll
+	DLL Name: msvcrt.dll
+	DLL Name: msvcrt.dll
+	DLL Name: WSOCK32.DLL
+
+DLL names reported by the C parser:
+DLL: KERNEL32.dll
+DLL: msvcrt.dll
+DLL: msvcrt.dll
+DLL: WSOCK32.DLL
+
+Result: DLL names and descriptor counts agree.

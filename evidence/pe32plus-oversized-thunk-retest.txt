@@ -1,0 +1,8 @@
+Import-name RVA exceeds 32-bit range.
+PE format: PE32+
+Import Directory RVA: 0x00001000
+Import Directory size: 40 bytes
+
+Imported DLLs and functions:
+
+DLL: testdll.dll

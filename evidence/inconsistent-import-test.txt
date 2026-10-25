@@ -1,0 +1,8 @@
+PE Import Parser — Inconsistent Import-Directory Fields Test
+Sun Oct 25 11:23:26 AM EDT 2026
+Test: import-directory RVA is zero while size is nonzero.
+Inconsistent import-directory fields.
+PE format: PE32
+Import Directory RVA: 0x00000000
+Import Directory size: 19 bytes
+Exit status: 1

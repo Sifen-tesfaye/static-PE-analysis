@@ -1,0 +1,175 @@
+
+/usr/share/dbd/binaries/dbd.exe:     file format pei-i386
+
+Characteristics 0x30f
+	relocations stripped
+	executable
+	line numbers stripped
+	symbols stripped
+	32 bit words
+	debugging information removed
+
+Time/Date		Tue May 21 00:09:50 2013
+Magic			010b	(PE32)
+MajorLinkerVersion	2
+MinorLinkerVersion	56
+SizeOfCode		0000d000
+SizeOfInitializedData	00002800
+SizeOfUninitializedData	00004a00
+AddressOfEntryPoint	00001130
+BaseOfCode		00001000
+BaseOfData		0000e000
+ImageBase		00400000
+SectionAlignment	00001000
+FileAlignment		00000200
+MajorOSystemVersion	4
+MinorOSystemVersion	0
+MajorImageVersion	1
+MinorImageVersion	0
+MajorSubsystemVersion	4
+MinorSubsystemVersion	0
+Win32Version		00000000
+SizeOfImage		00017000
+SizeOfHeaders		00000400
+CheckSum		000170ec
+Subsystem		00000003	(Windows CUI)
+DllCharacteristics	00000000
+SizeOfStackReserve	00200000
+SizeOfStackCommit	00001000
+SizeOfHeapReserve	00100000
+SizeOfHeapCommit	00001000
+LoaderFlags		00000000
+NumberOfRvaAndSizes	00000010
+
+The Data Directory
+Entry 0 00000000 00000000 Export Directory [.edata (or where ever we found it)]
+Entry 1 00016000 000009ec Import Directory [parts of .idata]
+Entry 2 00000000 00000000 Resource Directory [.rsrc]
+Entry 3 00000000 00000000 Exception Directory [.pdata]
+Entry 4 00000000 00000000 Security Directory
+Entry 5 00000000 00000000 Base Relocation Directory [.reloc]
+Entry 6 00000000 00000000 Debug Directory
+Entry 7 00000000 00000000 Description Directory
+Entry 8 00000000 00000000 Special Directory
+Entry 9 00000000 00000000 Thread Storage Directory [.tls]
+Entry a 00000000 00000000 Load Configuration Directory
+Entry b 00000000 00000000 Bound Import Directory
+Entry c 00000000 00000000 Import Address Table Directory
+Entry d 00000000 00000000 Delay Import Directory
+Entry e 00000000 00000000 CLR Runtime Header
+Entry f 00000000 00000000 Reserved
+
+There is an import table in .idata at 0x416000
+
+The Import Tables (interpreted .idata section contents)
+ vma:            Hint    Time      Forward  DLL       First
+                 Table   Stamp     Chain    Name      Thunk
+ 00016000	00016068 00000000 00000000 000168d0 000161e4
+
+	DLL Name: KERNEL32.dll
+	vma:     Ordinal  Hint  Member-Name  Bound-To
+	000161e4  <none>  0026  CloseHandle
+	000161e8  <none>  0054  CreatePipe
+	000161ec  <none>  0055  CreateProcessA
+	000161f0  <none>  0058  CreateSemaphoreA
+	000161f4  <none>  005b  CreateThread
+	000161f8  <none>  006b  DeleteCriticalSection
+	000161fc  <none>  0076  DisconnectNamedPipe
+	00016200  <none>  007b  DuplicateHandle
+	00016204  <none>  007e  EnterCriticalSection
+	00016208  <none>  009c  ExitProcess
+	0001620c  <none>  009d  ExitThread
+	00016210  <none>  00d3  FreeConsole
+	00016214  <none>  011b  GetCurrentProcess
+	00016218  <none>  0145  GetLastError
+	0001621c  <none>  0151  GetModuleHandleA
+	00016220  <none>  016c  GetProcAddress
+	00016224  <none>  0191  GetSystemTime
+	00016228  <none>  01ec  InitializeCriticalSection
+	0001622c  <none>  01f1  InterlockedExchange
+	00016230  <none>  020b  LeaveCriticalSection
+	00016234  <none>  0246  PeekNamedPipe
+	00016238  <none>  0268  ReadFile
+	0001623c  <none>  0276  ReleaseSemaphore
+	00016240  <none>  02e3  SetUnhandledExceptionFilter
+	00016244  <none>  02ef  Sleep
+	00016248  <none>  02f7  TerminateProcess
+	0001624c  <none>  0328  WaitForMultipleObjects
+	00016250  <none>  032a  WaitForSingleObject
+	00016254  <none>  033b  WriteFile
+
+ 00016014	000160e4 00000000 00000000 000168f8 00016260
+
+	DLL Name: msvcrt.dll
+	vma:     Ordinal  Hint  Member-Name  Bound-To
+	00016260  <none>  0026  _getpid
+	00016264  <none>  002b  _itoa
+	00016268  <none>  002f  _kbhit
+	0001626c  <none>  0040  _read
+	00016270  <none>  0051  _strdup
+	00016274  <none>  006e  _write
+
+ 00016028	00016104 00000000 00000000 0001697c 00016280
+
+	DLL Name: msvcrt.dll
+	vma:     Ordinal  Hint  Member-Name  Bound-To
+	00016280  <none>  0027  __getmainargs
+	00016284  <none>  0032  __p___argv
+	00016288  <none>  003c  __p__environ
+	0001628c  <none>  003e  __p__fmode
+	00016290  <none>  0050  __set_app_type
+	00016294  <none>  0079  _cexit
+	00016298  <none>  0098  _errno
+	0001629c  <none>  00e9  _iob
+	000162a0  <none>  00ea  _isatty
+	000162a4  <none>  015e  _onexit
+	000162a8  <none>  0184  _setmode
+	000162ac  <none>  019b  _stricmp
+	000162b0  <none>  021c  atexit
+	000162b4  <none>  021e  atoi
+	000162b8  <none>  0239  fprintf
+	000162bc  <none>  023a  fputc
+	000162c0  <none>  023f  free
+	000162c4  <none>  0247  fwrite
+	000162c8  <none>  024b  getenv
+	000162cc  <none>  0272  malloc
+	000162d0  <none>  0278  memcpy
+	000162d4  <none>  027a  memset
+	000162d8  <none>  027f  printf
+	000162dc  <none>  0290  signal
+	000162e0  <none>  0298  strchr
+	000162e4  <none>  029d  strerror
+	000162e8  <none>  029f  strlen
+	000162ec  <none>  02a1  strncmp
+	000162f0  <none>  02a6  strstr
+	000162f4  <none>  02ba  vfprintf
+
+ 0001603c	00016184 00000000 00000000 000169e0 00016300
+
+	DLL Name: WSOCK32.DLL
+	vma:     Ordinal  Hint  Member-Name  Bound-To
+	00016300  <none>  0019  WSACleanup
+	00016304  <none>  001a  WSAGetLastError
+	00016308  <none>  001f  WSAStartup
+	0001630c  <none>  0022  __WSAFDIsSet
+	00016310  <none>  0023  accept
+	00016314  <none>  0024  bind
+	00016318  <none>  0025  closesocket
+	0001631c  <none>  0026  connect
+	00016320  <none>  0028  gethostbyaddr
+	00016324  <none>  0029  gethostbyname
+	00016328  <none>  0031  getsockname
+	0001632c  <none>  0033  htonl
+	00016330  <none>  0034  htons
+	00016334  <none>  0035  inet_addr
+	00016338  <none>  0037  inet_ntoa
+	0001633c  <none>  0039  listen
+	00016340  <none>  003b  ntohs
+	00016344  <none>  003d  recv
+	00016348  <none>  0042  select
+	0001634c  <none>  0043  send
+	00016350  <none>  0046  setsockopt
+	00016354  <none>  0048  socket
+
+ 00016050	00000000 00000000 00000000 00000000 00000000
+

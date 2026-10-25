@@ -1,0 +1,1 @@
+/usr/share/dbd/binaries/dbd.exe: PE32 executable for MS Windows 4.00 (console), Intel i386 (stripped to external PDB), 5 sections

@@ -1,0 +1,5 @@
+Input: TEST
+Compile-time hash: 0xB2D739E5
+Runtime reference: 0xB2D739E5
+Comparison: PASS
+Program exit code: 0

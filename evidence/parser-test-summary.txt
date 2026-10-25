@@ -1,0 +1,43 @@
+PE Import Parser — Test Summary
+Date: 2026-10-25
+
+1. Valid sample: /usr/share/dbd/binaries/dbd.exe
+   Result: PASS
+   Observed: PE32 import directory parsed; DLLs and functions listed.
+   Exit status: 0
+
+2. Invalid DOS header: invalid-header.bin
+   Result: PASS
+   Observed: "Invalid DOS header."
+   Exit status: 1
+
+3. Invalid PE signature: invalid-pe-signature.bin
+   Result: PASS
+   Observed: "Invalid PE header."
+   Exit status: 1
+
+4. Truncated file: truncated-pe.bin
+   Result: PASS
+   Observed: "Invalid DOS header."
+   Exit status: 1
+
+5. No-import fixture: no-import-test.bin
+   Result: PASS
+   Observed: "No import directory declared."
+   Exit status: 0
+
+6. Original bounds fixture: bounds-test.bin
+   Result: EARLY REJECTION
+   Observed: "Optional header lacks import-directory fields."
+   Exit status: 1
+   Note: Did not reach section-boundary validation.
+
+7. Section-boundary fixture: section-boundary-test.bin
+   Result: PASS
+   Observed: "Import directory RVA does not map to valid file data."
+   Exit status: 1
+
+Scope:
+These are targeted tests, not exhaustive validation. The parser is a
+learning tool and is not a production-grade PE validation library.
+The sample executable was analyzed statically and was not executed.

@@ -1,0 +1,13 @@
+Independent Cross-Validation of PE Import Parsing
+Sample: /usr/share/dbd/binaries/dbd.exe
+Reference tool: GNU objdump -p
+
+Results:
+- Both tools reported four import descriptors.
+- DLL names and descriptor order matched.
+- Duplicate msvcrt.dll descriptors were preserved.
+- Parser report: 100 lines.
+- objdump report: 175 lines.
+
+Scope: descriptor-level comparison for this sample.
+Function-level validation is documented separately.

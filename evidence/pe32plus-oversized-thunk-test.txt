@@ -1,0 +1,4 @@
+Import directory RVA does not map to valid file data.
+PE format: PE32+
+Import Directory RVA: 0x00001000
+Import Directory size: 40 bytes

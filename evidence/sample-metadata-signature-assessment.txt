@@ -1,0 +1,64 @@
+Sample Identification and Digital-Signature Assessment
+Date: 2026-10-25
+Sample: /usr/share/dbd/binaries/dbd.exe
+
+File identification:
+/usr/share/dbd/binaries/dbd.exe: PE32 executable for MS Windows 4.00 (console), Intel i386 (stripped to external PDB), 5 sections
+
+SHA-256:
+d46fd738f140c90fc120b4dfb6759df5f4fc1f9e5dbb277200cd9d1155a03fef  /usr/share/dbd/binaries/dbd.exe
+
+PE format and architecture:
+
+/usr/share/dbd/binaries/dbd.exe:     file format pei-i386
+architecture: i386, flags 0x00000102:
+EXEC_P, D_PAGED
+start address 0x00401130
+
+
+Selected PE metadata:
+
+/usr/share/dbd/binaries/dbd.exe:     file format pei-i386
+
+Characteristics 0x30f
+	relocations stripped
+	executable
+	line numbers stripped
+	symbols stripped
+	32 bit words
+	debugging information removed
+
+Time/Date		Tue May 21 00:09:50 2013
+Magic			010b	(PE32)
+MajorLinkerVersion	2
+MinorLinkerVersion	56
+SizeOfCode		0000d000
+SizeOfInitializedData	00002800
+SizeOfUninitializedData	00004a00
+AddressOfEntryPoint	00001130
+BaseOfCode		00001000
+BaseOfData		0000e000
+ImageBase		00400000
+SectionAlignment	00001000
+FileAlignment		00000200
+MajorOSystemVersion	4
+MinorOSystemVersion	0
+MajorImageVersion	1
+MinorImageVersion	0
+MajorSubsystemVersion	4
+MinorSubsystemVersion	0
+Win32Version		00000000
+SizeOfImage		00017000
+SizeOfHeaders		00000400
+CheckSum		000170ec
+Subsystem		00000003	(Windows CUI)
+DllCharacteristics	00000000
+SizeOfStackReserve	00200000
+SizeOfStackCommit	00001000
+
+Authenticode verification:
+No signature found
+Unable to extract existing signature
+PE checksum   : 000170EC
+Failed
+Verification exit status: 

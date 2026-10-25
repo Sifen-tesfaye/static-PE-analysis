@@ -1,0 +1,9 @@
+=== SHA-256 ===
+d46fd738f140c90fc120b4dfb6759df5f4fc1f9e5dbb277200cd9d1155a03fef  /usr/share/dbd/binaries/dbd.exe
+
+=== File type ===
+/usr/share/dbd/binaries/dbd.exe: PE32 executable for MS Windows 4.00 (console), Intel i386 (stripped to external PDB), 5 sections
+
+=== Metadata ===
+File size: 64512 bytes
+File name: /usr/share/dbd/binaries/dbd.exe

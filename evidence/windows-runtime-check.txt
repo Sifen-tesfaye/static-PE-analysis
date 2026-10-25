@@ -1,0 +1,14 @@
+Windows Runtime Availability Check
+Date: 2026-10-25
+
+Environment: Kali Linux
+Windows cross-compiler: Available
+Wine runtime: Not installed
+
+Result:
+Windows PE executables can be cross-compiled in this environment,
+but local Windows runtime testing through Wine is unavailable.
+
+Limitation:
+Compilation success alone does not establish runtime correctness.
+No Windows executable was run during this check.

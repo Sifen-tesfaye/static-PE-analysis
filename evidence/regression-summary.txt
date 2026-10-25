@@ -1,0 +1,37 @@
+PE Import Parser — Regression Test Summary
+Sun Oct 25 11:24:53 AM EDT 2026
+
+Test 1: Valid PE sample
+Exit status: 0
+
+Test 2: No-import fixture
+PE format: PE32
+Import Directory RVA: 0x00000000
+Import Directory size: 0 bytes
+No import directory declared.
+Exit status: 0
+
+Test 3: Invalid DOS header
+Invalid DOS header.
+Exit status: 1
+
+Test 4: Invalid section mapping
+Import directory RVA does not map to valid file data.
+PE format: PE32
+Import Directory RVA: 0x00001000
+Import Directory size: 20 bytes
+Exit status: 1
+
+Test 5: Import directory size 19
+Invalid import-directory size or range.
+PE format: PE32
+Import Directory RVA: 0x00001000
+Import Directory size: 19 bytes
+Exit status: 1
+
+Test 6: Inconsistent directory fields
+Inconsistent import-directory fields.
+PE format: PE32
+Import Directory RVA: 0x00000000
+Import Directory size: 19 bytes
+Exit status: 1

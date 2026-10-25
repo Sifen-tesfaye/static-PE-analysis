@@ -1,0 +1,100 @@
+PE format: PE32
+Import Directory RVA: 0x00016000
+Import Directory size: 2540 bytes
+
+Imported DLLs and functions:
+
+DLL: KERNEL32.dll
+  CloseHandle
+  CreatePipe
+  CreateProcessA
+  CreateSemaphoreA
+  CreateThread
+  DeleteCriticalSection
+  DisconnectNamedPipe
+  DuplicateHandle
+  EnterCriticalSection
+  ExitProcess
+  ExitThread
+  FreeConsole
+  GetCurrentProcess
+  GetLastError
+  GetModuleHandleA
+  GetProcAddress
+  GetSystemTime
+  InitializeCriticalSection
+  InterlockedExchange
+  LeaveCriticalSection
+  PeekNamedPipe
+  ReadFile
+  ReleaseSemaphore
+  SetUnhandledExceptionFilter
+  Sleep
+  TerminateProcess
+  WaitForMultipleObjects
+  WaitForSingleObject
+  WriteFile
+
+DLL: msvcrt.dll
+  _getpid
+  _itoa
+  _kbhit
+  _read
+  _strdup
+  _write
+
+DLL: msvcrt.dll
+  __getmainargs
+  __p___argv
+  __p__environ
+  __p__fmode
+  __set_app_type
+  _cexit
+  _errno
+  _iob
+  _isatty
+  _onexit
+  _setmode
+  _stricmp
+  atexit
+  atoi
+  fprintf
+  fputc
+  free
+  fwrite
+  getenv
+  malloc
+  memcpy
+  memset
+  printf
+  signal
+  strchr
+  strerror
+  strlen
+  strncmp
+  strstr
+  vfprintf
+
+DLL: WSOCK32.DLL
+  WSACleanup
+  WSAGetLastError
+  WSAStartup
+  __WSAFDIsSet
+  accept
+  bind
+  closesocket
+  connect
+  gethostbyaddr
+  gethostbyname
+  getsockname
+  htonl
+  htons
+  inet_addr
+  inet_ntoa
+  listen
+  ntohs
+  recv
+  select
+  send
+  setsockopt
+  socket

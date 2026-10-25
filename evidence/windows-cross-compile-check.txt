@@ -1,0 +1,8 @@
+Windows Cross-Compilation Environment Check
+Date: 2026-10-25
+Compiler: x86_64-w64-mingw32-gcc (GCC) 15-win32
+Target executable: /tmp/windows_header_check.exe
+/tmp/windows_header_check.exe: PE32+ executable for MS Windows 5.02 (console), x86-64, 18 sections
+Compilation exit code: 0
+Result: PASS
+Scope: Minimal Windows API header and linking check only.

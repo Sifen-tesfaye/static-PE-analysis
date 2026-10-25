@@ -1,0 +1,9 @@
+PE Import Parser — Build Record
+Sun Oct 25 10:48:31 AM EDT 2026
+Compiler:
+gcc (Debian 15.2.0-17) 15.2.0
+
+Build command:
+gcc -std=c11 -Wall -Wextra -Wpedantic pe_import_report.c -o pe_import_report
+
+Result: Compilation completed without reported warnings or errors.
